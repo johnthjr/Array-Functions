@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Functions</title>
+</head>
+<body>
+    <h1>Array Functions</h1>
+
+    <script>
+        // map()
+        let numbers = [1, 2, 3, 4, 5]
+        let doubled = numbers.map( (num)=> {return num*2} )
+
+
+        // for (let i = 0; i < numbers.length; i++){
+        //     doubled.push(numbers[i]*2)
+        // }
+
+        console.log(numbers)
+        //  console.log(doubled)
+
+        // filter()
+        let evens = numbers.filter((num)=>{ return num % 2 === 0})
+        // for (let i=0; i < numbers.length; i++){
+        //     if (numbers[i] % 2 === 0){
+        //         evens.push(numbers[i])
+        //     }
+        // }
+
+        console.log(evens)
+
+
+        // reduce()
+        let sum = numbers.reduce( (accumulator, currentValue)=>{
+            return accumulator + currentValue
+        } )
+        // let sum = 0
+        // for (let i = o; i < numbers.length; i++){
+        //     sum = sum + numbers[i]
+        // }
+        console.log(sum)
+
+    </script>
+</body>
+</html>
